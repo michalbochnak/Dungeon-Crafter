@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- string with user information filename ( key <-> value )
+        and key names to access particular data-->
+    <string name="user_info_file">
+        dangeon_crafter_user_info
+    </string>
+    <string name="session_id_key">
+        sessionid
+    </string>
+    <string name="playerName">
+        playerName
+    </string>
+    <string name="playerRace">
+        playerRace
+    </string>
+    <string name="playerClass">
+        playerClass
+    </string>
+    <string name="playerXP">
+        playerXP
+    </string>
+    <string name="playerLevel">
+        playerLevel
+    </string>
+    <string name="playerId">
+        playerId
+    </string>
+    <string name="groupId">
+        groupId
+    </string>
+    <string name="playerIntelligence">
+        playerIntelligence
+    </string>
+    <string name="playerStrength">
+        playerStrength
+    </string>
+    <string name="playerHealth">
+        playerHealth
+    </string>
+    <string name="players"> players </string>
+    <string name="enemies"> enemies </string>
+    <string name="race"> race </string>
+
+</resources>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.uic.cs440.group1.dungeon_crafter">
+
+    <uses-sdk android:targetSdkVersion="25" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Activities.LoginActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/key">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name=".Activities.CharacterCreationActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/key" />
+        <activity
+            android:name=".Activities.LobbyActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/key" />
+        <activity
+            android:name=".Activities.FindGroupActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/key" />
+        <activity
+            android:name=".Activities.AdventureActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/key">
+
+        </activity>
+        <activity
+            android:name=".Activities.GameOverActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.Pop">
+        </activity>
+        <activity
+            android:name=".Activities.StatisticsActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/key">
+
+        </activity>
+        <activity
+            android:name=".Activities.PostGameStatisticsActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/key">
+        </activity>
+    </application>
+
+</manifest>

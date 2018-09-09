@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/character_creation_background"
+    tools:context="edu.uic.cs440.group1.dungeon_crafter.Activities.CharacterCreationActivity"
+    tools:layout_editor_absoluteY="25dp">
+
+
+    <TextView
+        android:id="@+id/nameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="452dp"
+        android:layout_marginTop="92dp"
+        android:text="Name:"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/raceLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="452dp"
+        android:layout_marginTop="164dp"
+        android:text="Race:"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/startingClassLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="452dp"
+        android:layout_marginTop="268dp"
+        android:text="Starting class:"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/characterNameEditText"
+        android:layout_width="200dip"
+        android:layout_height="50dip"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="84dp"
+        android:background="@android:drawable/alert_dark_frame"
+        android:backgroundTint="@color/ligth_gray"
+        android:ems="10"
+        android:hint="Character name"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/nameLabel"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/humanButton"
+        android:layout_width="100dip"
+        android:layout_height="40dip"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="156dp"
+        android:backgroundTint="@android:color/background_light"
+        android:text="Human"
+        app:layout_constraintStart_toEndOf="@+id/raceLabel"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/lobbyStatsButton"
+        android:layout_width="100dip"
+        android:layout_height="40dip"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="156dp"
+        android:backgroundTint="@android:color/background_light"
+        android:text="Dwarf"
+        app:layout_constraintStart_toEndOf="@+id/humanButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/lobbyLogOutButton"
+        android:layout_width="100dip"
+        android:layout_height="40dip"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@android:color/background_light"
+        android:text="Elf"
+        app:layout_constraintStart_toEndOf="@+id/raceLabel"
+        app:layout_constraintTop_toBottomOf="@+id/humanButton" />
+
+    <Button
+        android:id="@+id/gnomeButton"
+        android:layout_width="100dip"
+        android:layout_height="40dip"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@android:color/background_light"
+        android:text="Gnome"
+        app:layout_constraintStart_toEndOf="@+id/lobbyLogOutButton"
+        app:layout_constraintTop_toBottomOf="@+id/lobbyStatsButton" />
+
+    <Button
+        android:id="@+id/fighterButton"
+        android:layout_width="101dp"
+        android:layout_height="40dip"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="258dp"
+        android:backgroundTint="#a4e6fb"
+        android:text="Fighter"
+        app:layout_constraintStart_toEndOf="@+id/startingClassLabel"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/rangerButton"
+        android:layout_width="100dip"
+        android:layout_height="40dip"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="258dp"
+        android:backgroundTint="#a4e6fb"
+        android:text="Ranger"
+        app:layout_constraintStart_toEndOf="@+id/fighterButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/doneButton"
+        android:layout_width="100dip"
+        android:layout_height="40dip"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="258dp"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:text="Done"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toEndOf="@+id/rangerButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/characterImageView"
+        android:layout_width="180dp"
+        android:layout_height="201dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/doneButton"
+        app:layout_constraintStart_toEndOf="@+id/lobbyStatsButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.877"
+        app:srcCompat="@drawable/empty_race" />
+
+</android.support.constraint.ConstraintLayout>

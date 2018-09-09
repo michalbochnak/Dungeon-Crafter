@@ -1,0 +1,31 @@
+Range for board coordinates not consistant.
+
+
+TO DO:
+
+Alex / Michal
+	- Database stuff ( App / Db )
+
+Sean: 
+	- Remove unnessesary UI elements from Character Creation Act
+	- Make screens style consistent
+		- buttons
+		- input fields
+	- make decent GUI for gameplay
+		- team info
+			- highlight player info
+			- health info for each team member
+			- health for enemy?
+	- update grid BG
+
+- From IceScrum:
+	- Attack enemy by user - Sean 
+	- Allow enemy to attack user - Michal
+	- Statistics screen - Artur
+	- End the game - Artur
+		- check health -> win / lose
+	- Additional levels
+		- change bg
+
+Added on Apr 7th:
+	- implement classes for Orke and Troll

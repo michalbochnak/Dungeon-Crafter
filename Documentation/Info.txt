@@ -1,0 +1,15 @@
+This file contains information about Dangeon Crafter
+filenames, conventions, etc.
+
+- "dangeon_crafter_user_info" - filename stored on the device, holds user data.
+	- Stored in rsc string to allow access from all the activities
+	- Can be retrived using SharedPreferences
+	- "session_id_key" - session ID received from the server when logged in
+	
+
+Board coordinates range:
+	- x: 1 - 17
+	- y: 1 - 12
+
+Race:
+	- 101 - 106

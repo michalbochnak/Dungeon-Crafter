@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="races">
+        <item>Human</item>
+        <item>Human_2</item>
+        <item>Human_3</item>
+        <item>Human_4</item>
+    </string-array>
+
+    <string-array name="classes">
+        <item>class_1</item>
+        <item>class_2</item>
+        <item>class_3</item>
+    </string-array>
+
+</resources>

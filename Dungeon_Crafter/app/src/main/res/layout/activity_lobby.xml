@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lobbybackgroundfour"
+    tools:context="edu.uic.cs440.group1.dungeon_crafter.Activities.LobbyActivity"
+    tools:layout_editor_absoluteY="25dp">
+
+    <Button
+        android:id="@+id/lobbyFindGroupButton"
+        android:layout_width="245dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="18dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginTop="55dp"
+        android:background="@drawable/find_group_button"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/lobbyStatsButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/lobbyStatsButton"
+        android:layout_width="245dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="60dp"
+        android:background="@drawable/view_stats_button"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/lobbyLogOutButton"
+        android:layout_width="245dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="56dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginRight="60dp"
+        android:background="@drawable/logout_button"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lobbyStatsButton" />
+
+    <TextView
+        android:id="@+id/playerName"
+        android:layout_width="172dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="80dp"
+        android:text="PlayerName"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textColorLink="@android:color/background_dark"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/characterPicture"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/characterPicture"
+        android:layout_width="171dp"
+        android:layout_height="186dp"
+        android:layout_marginBottom="48dp"
+        android:layout_marginStart="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/empty_race" />
+
+    <TextView
+        android:id="@+id/playerXPLabel"
+        android:layout_width="75dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="8dp"
+        android:text="XP: "
+        android:textColor="@android:color/background_dark"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/characterPicture" />
+
+    <TextView
+        android:id="@+id/playerLevelLabel"
+        android:layout_width="73dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:text="Level: "
+        android:textColor="@android:color/background_dark"
+        app:layout_constraintStart_toEndOf="@+id/playerXPLabel"
+        app:layout_constraintTop_toBottomOf="@+id/characterPicture" />
+</android.support.constraint.ConstraintLayout>
